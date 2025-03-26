@@ -1,0 +1,6 @@
+pywin32
+transformers
+torch
+scikit-learn
+pandas
+numpy
