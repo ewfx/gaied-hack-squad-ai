@@ -73,9 +73,9 @@ class OutlookMailBox:
     def read_mails_from_outlook(self):
         unread_count = self.get_unread_email_count()
         if unread_count == 0:
-            print(f"No unread email in {self.folder_name} folder.")
+            print(f"No unread email in {self.folder_name} folder")
             return []
-        elif unread_count < 0:
+        if unread_count < 0:
             print("Could not retrieve unread email count.")
             return []
         else:
